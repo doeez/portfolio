@@ -986,6 +986,11 @@ h1, h2, h3, h4, h5, h6, p {
     #Work .work_project_wrap .project_info_inner ul li{
       margin:30px 0;
     }
+    #Work .work_project_wrap .project_info_inner ul li a.openPdf{
+      color: #000;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
     #Work .work_project_wrap .project_info_inner ul li .info_title{
       font-size: 28px;
       font-weight: bold;
