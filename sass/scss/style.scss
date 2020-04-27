@@ -457,6 +457,12 @@ to {
                 margin-top: 3.5%;
                 padding: 3%;
                 overflow: hidden;
+                .work-title{
+                    color: #9c7bff;
+                    padding: 0 2%;
+                    font-size: 42px;
+                    margin-bottom: 20px;
+                }
                 .work_contents_list{
                     transform: translate3d(200px,0,0);
                     @include animation(fadeIn 0.8s ease);
