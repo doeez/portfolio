@@ -1,7 +1,4 @@
 @import "_mixin.scss"; 
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-:lang(ko) {font-family: 'Noto Sans KR', sans-serif;}
 
 //공통
 body{
@@ -455,9 +452,12 @@ to {
             .work_contents{
                 max-width: 100%;
                 margin-top: 3.5%;
-                padding: 3%;
+                padding: 3% 0;
                 overflow: hidden;
-                .work-title{
+                .project_wrap{
+                    margin-bottom:40px;
+                }
+                .work_title{
                     color: #9c7bff;
                     padding: 0 2%;
                     font-size: 42px;
@@ -553,13 +553,61 @@ to {
                 }
             }
         }
+        /*
+        프로젝트 상세페이지
+        */
+        .work_project_wrap{
+            max-width: 90%;
+            margin-left: auto;
+            padding: 8% 5%;
+            box-sizing: border-box;
+            .pr_title{
+                text-align: center;
+                font-size: 36px;
+                color: #9d8bfd;
+            }
+            .project_info{
+                .project_mainImg{
+                    display: block;
+                    width: 80%;
+                    margin: 10px auto;
+                    border: 2px solid #abb5ff;
+                    img{
+                        max-width: 100%;
+                        display: block;
+                    }
+                }
+                .siteLink_wrap{
+                    width: 280px;
+                    border: 2px solid #9d8bfd;
+                    margin: 15px auto;
+                    padding: 10px 0;
+                    transition: all .4s ease-in;
+                    &:hover{
+                     background:#9d8bfd;
+                    }
+                    a{
+                        color: #9d8bfd;
+                        text-decoration: none;
+                        text-align: center;
+                        display: block;
+                        font-weight: bold;
+                        font-style: italic;
+                        transition: all .4s ease-in;
+                        &:hover{
+                         color:#fff;
+                         }
+                    }
+                }
+            }
+        }
     }
 
     .work_background{
         &:before {
             content: '';
             display: inline-block;
-            width:90vw;
+            width:90%;
             min-height: 100vh;
             height:100%;
             position: absolute;

@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-:lang(ko) {
-  font-family: 'Noto Sans KR', sans-serif; }
 
 body {
   margin: 0;
@@ -772,7 +769,7 @@ h1, h2, h3, h4, h5, h6, p {
       height: 100%;
       box-sizing: border-box;
       margin-left: auto;
-      padding: 3%;
+      padding: 3% 0;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -798,13 +795,16 @@ h1, h2, h3, h4, h5, h6, p {
       #Work .contentBox .work_contents {
         max-width: 100%;
         margin-top: 3.5%;
-        padding: 3%;
+        padding: 3% 0;
         overflow: hidden; }
-        #Work .contentBox .work_contents .work-title{
+        #Work .contentBox .work_contents .project_wrap{
+          margin-bottom:40px;
+        }
+        #Work .contentBox .work_contents .work_title{
           color: #9c7bff;
-          padding: 0 2%;
-          font-size: 42px;
-          margin-bottom: 20px;
+                    padding: 0 2%;
+                    font-size: 42px;
+                    margin-bottom: 20px;
         }
         #Work .contentBox .work_contents .work_contents_list {
           transform: translate3d(200px, 0, 0);
@@ -901,10 +901,147 @@ h1, h2, h3, h4, h5, h6, p {
             #Work .contentBox .work_contents .work_contents_list li img {
               max-width: 100%;
               vertical-align: bottom; }
+
+     /*
+        프로젝트 상세페이지
+    */
+    #Work .work_project_wrap{
+          max-width: 90%;
+          margin-left: auto;
+          padding: 8% 5%;
+          box-sizing: border-box;
+    }
+    #Work .work_project_wrap .pr_title{
+              text-align: center;
+              font-size: 36px;
+              color: #59bfbf;
+              font-family: 'Cabin', sans-serif;
+              font-weight: bold;
+    }
+    #Work .work_project_wrap .project_mainImg{
+                  display: block;
+                  width: 80%;
+                  margin: 10px auto;
+                  border: 2px solid #59bfbf;
+    }
+    #Work .work_project_wrap .project_mainImg img{
+      max-width: 100%;
+      display: block;
+    }
+    #Work .work_project_wrap .siteLink_wrap{
+                  width: 280px;
+                  border: 2px solid #59bfbf;
+                  margin: 15px auto;
+                  padding: 10px 0;
+                  transition: all .3s ease;
+    }
+    #Work .work_project_wrap .siteLink_wrap a{
+      color: #59bfbf;
+                      text-decoration: none;
+                      text-align: center;
+                      display: block;
+                      font-weight: bold;
+                      font-style: italic;
+                      transition: all .3s ease;
+    }
+    #Work .work_project_wrap .siteLink_wrap:hover{
+      background:#59bfbf;
+    }
+    #Work .work_project_wrap .siteLink_wrap a:hover{
+      color:#fff;
+    }
+    #Work .work_project_wrap .project_info_inner{
+      width: 80%;
+      margin: 60px auto;
+    }
+    #Work .work_project_wrap .project_info_inner ul{
+      list-style: none;
+      padding: 0;
+    }
+    #Work .work_project_wrap .project_info_inner ul li{
+      margin:30px 0;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_title{
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 1px solid #5d5a5a;
+      margin-bottom: 15px;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_txt{
+      letter-spacing: 0.08rem;
+      line-height: 28px;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_point{
+      margin: 15px;
+      line-height: 32px;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_point span{
+      font-size: 18px;
+      font-weight: bold;
+      color: #59bfbf;
+    }
+    #Work .work_project_wrap .project_info_inner ul li a.link_gitHub{
+      padding: 5px 10px;
+      display: block;
+      width: 180px;
+      border: 1px solid;
+      text-align: center;
+      color: #fff;
+      background: #59bfbf;
+    }
+    #Work #carouselExampleIndicators{
+      max-width: 75%!important;
+      margin-left: 5%;
+      margin-bottom: 80px;
+    }
+    #Work #carouselExampleIndicators .carousel-indicators{
+      bottom:-100px!important;
+      width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    #Work #carouselExampleIndicators .carousel-indicators .controller-infoTxt{
+      text-indent: 0!important;
+    width: initial!important;
+    height: initial!important;
+    padding: 10px 0;
+    color: #59bfbf;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer!important;
+    background: initial;
+    }
+    #Work #carouselExampleIndicators .carousel-indicators .carousel-indicators-controller{
+      text-indent: 0!important;
+      width: initial!important;
+      height: initial!important;
+      padding: 10px;
+      margin-right: 10px!important;
+      background: initial!important;
+      font-size: 14px!important;
+      font-weight: bold!important;
+      color: #59bfbf!important;
+      cursor: pointer!important;
+      border: 1px solid #59bfbf!important;
+    }
+    #Work #carouselExampleIndicators .carousel-control-prev{
+      left: -5%!important;
+    color: #000!important;
+    width: 5%!important;
+    background: #000!important;
+    }
+    #Work #carouselExampleIndicators .carousel-control-next{
+      right: -5%!important;
+    color: #000!important;
+    width: 5%!important;
+    background: #000!important;
+    }
+
   .work_background:before {
     content: '';
     display: inline-block;
-    width: 90vw;
+    width: 90%;
     min-height: 100vh;
     height: 100%;
     position: absolute;
@@ -935,7 +1072,9 @@ h1, h2, h3, h4, h5, h6, p {
     animation: passing 1300ms ease;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
-    animation-fill-mode: both; } }
+    animation-fill-mode: both; } 
+
+  }
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
   body.loadmotion::after {
