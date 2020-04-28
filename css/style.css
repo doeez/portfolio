@@ -994,7 +994,7 @@ p {
         position: absolute;
         z-index: 3;
         top: 15%;
-        left: 5.5%;
+        left: 4.5%;
         margin: 0;
         writing-mode: tb-rl;
         font-weight: bold;
@@ -1058,6 +1058,7 @@ p {
         padding: 0 2%;
         font-size: 42px;
         margin-bottom: 20px;
+        font-family: 'Cabin', sans-serif;
         transform: translate3d(200px, 0, 0);
         -webkit-animation: fadeIn 0.8s ease;
         -moz-animation: fadeIn 0.8s ease;
@@ -2413,100 +2414,39 @@ p {
         left: 110px;
         background: linear-gradient(to right, #b06ab3, #4568dc);
     }
+    #About .contentBox .profile .profile_box_03 .profile_skill .skill_innerBox {
+        max-width: 100%;
+    }
+    #About .contentBox .profile .profile_box_03 .profile_skill .skill_innerBox .skill_innerBox_ttl {
+        text-align: center;
+        font-size: 22px;
+        color: #828282;
+    }
+    #About .contentBox .profile .profile_box_03 .profile_skill .skill_innerBox .skill_innerBox_thumbsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    #About .contentBox .profile .profile_box_03 .profile_skill .skill_innerBox .skill_innerBox_thumbs {
+        width: 48%;
+        text-align: center;
+        padding: 10px;
+    }
+    #About .contentBox .profile .profile_box_03 .profile_skill .skill_innerBox .skill_innerBox_thumbs img {
+        width: 80px;
+        height: 80px;
+    }
     #About .contentBox .profile .profile_box_03 .profile_skill .sub_txt {
         margin: 7px 0;
-    }
-    #About .contentBox .profile .profile_box_03 .profile_skill .skill_innerBox {
-        display: inline-block;
-        width: 48%;
-        box-sizing: border-box;
-        padding: 0 10px;
-        vertical-align: top;
-    }
-    #About .contentBox .skills {
-        margin: 10px 0;
-        overflow: hidden;
-        padding: 0 2%;
-    }
-    #About .contentBox .skills.loaded {
-        transform: translate3d(0, -100px, 0);
-    }
-    #About .contentBox .skills.loaded .skill_bar {
-        -webkit-animation: graphMotion 1.5s ease-in;
-        -moz-animation: graphMotion 1.5s ease-in;
-        -ms-animation: graphMotion 1.5s ease-in;
-        animation: graphMotion 1.5s ease-in;
-        -webkit-animation-fill-mode: both;
-        -moz-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
-    #About .contentBox .skills ul {
-        list-style: none;
-        padding: 0;
-    }
-    #About .contentBox .skills ul li {
-        margin: 2.5% 0;
-    }
-    #About .contentBox .skills ul li span {
-        display: block;
-    }
-    #About .contentBox .skills ul li .bar_wrap {
-        position: relative;
-        width: 100%;
-        margin-top: 6px;
-        overflow: hidden;
-    }
-    #About .contentBox .skills ul li .bar_wrap .bar_basic {
-        width: 100%;
-        background: #efefef;
-        padding: 2.5%;
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #About .contentBox .skills ul li .bar_wrap .skill_bar {
-        max-width: 100%;
-        padding: 2.5%;
-        background: linear-gradient(to right, #b06ab3, #4568dc);
-        position: relative;
-        z-index: 2;
-    }
-    #About .contentBox .skills ul li .bar_wrap .skill_bar.skill_01 {
-        max-width: 90%;
-    }
-    #About .contentBox .skills ul li .bar_wrap .skill_bar.skill_02 {
-        max-width: 65%;
-    }
-    #About .contentBox .skills ul li .bar_wrap .skill_bar.skill_03 {
-        max-width: 60%;
-    }
-    #About .contentBox .skills ul li .bar_wrap .skill_bar.skill_04 {
-        max-width: 85%;
-    }
-    #About .contentBox .skills ul li .bar_wrap .skill_bar.skill_05 {
-        max-width: 75%;
-    }
-    #About .contentBox .skills ul li .bar_wrap .skill_bar.skill_06 {
-        max-width: 100%;
-    }
-    #About .contentBox .skills .skill_graph_main {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0 2%;
-    }
-    #About .contentBox .skills .skill_graph_others {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0 2%;
     }
     .about_background .page_title {
         font-size: 14vw;
         color: #464646;
         position: absolute;
         z-index: 3;
-        top: 100px;
+        top: 85px;
         right: 4vw;
         margin: 0;
         font-weight: bold;
@@ -2537,16 +2477,21 @@ p {
         -moz-animation-fill-mode: both;
         animation-fill-mode: both;
     }
+    #Work .contentBox .work_contents .project_wrap {
+        margin-bottom: 40px;
+    }
+    #Work .contentBox .work_contents .project_wrap .work_title {
+        color: #9c7bff;
+    }
     #Work .contentBox .work_contents .work_contents_list {
         list-style: none;
-        padding: 5% 3%;
+        padding: 3% 0;
         margin: 0;
     }
     #Work .contentBox .work_contents .work_contents_list li {
         width: 100%;
         box-sizing: border-box;
         padding: 0;
-        margin: 15px 0;
         position: relative;
         display: -webkit-box;
         display: -webkit-flex;
@@ -2560,6 +2505,7 @@ p {
     #Work .contentBox .work_contents .work_contents_list li .inner_contents {
         order: 2;
         margin-top: 10px;
+        text-align: center;
     }
     #Work .contentBox .work_contents .work_contents_list li .inner_contents h2 {
         font-style: italic;
@@ -2583,6 +2529,8 @@ p {
         position: absolute;
         bottom: -8px;
         left: 0;
+        right: 0;
+        margin: auto;
     }
     #Work .contentBox .work_contents .work_contents_list li .inner_contents h2 span.portfolio_part {
         margin-top: 20px;
@@ -2620,6 +2568,94 @@ p {
         -webkit-animation-fill-mode: both;
         -moz-animation-fill-mode: both;
         animation-fill-mode: both;
+    }
+    /*
+      프로젝트 상세페이지
+    */
+    #Work .work_project_wrap {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5%;
+        background-color: #f9f9f9;
+        -webkit-animation: passingSP02 1300ms ease;
+        -moz-animation: passingSP02 1300ms ease;
+        -ms-animation: passingSP02 1300ms ease;
+        animation: passingSP02 1300ms ease;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    #Work .work_project_wrap .project_info .pr_title {
+        color: #59bfbf;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+    }
+    #Work .work_project_wrap .project_info .project_mainImg {
+        display: block;
+        border: 1px solid #59bfbf;
+        margin: 20px 0;
+    }
+    #Work .work_project_wrap .project_info .project_mainImg img {
+        max-width: 100%;
+        display: block;
+    }
+    #Work .work_project_wrap .project_info .siteLink_wrap {
+        width: 60%;
+        margin: 0 auto;
+        border: 1px solid #59bfbf;
+        text-align: center;
+    }
+    #Work .work_project_wrap .project_info .siteLink_wrap a {
+        color: #59bfbf;
+        font-size: 13px;
+        padding: 8px 0;
+        display: block;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner {
+        margin: 30px 0;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner ul {
+        list-style: none;
+        padding: 0;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner ul li {
+        margin-bottom: 30px;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner .info_title {
+        font-weight: bold;
+        font-size: 18px;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner .info_txt {
+        font-size: 13px;
+        letter-spacing: 0.08rem;
+        line-height: 28px;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner .info_point {
+        margin: 15px;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner .info_point span {
+        color: #59bfbf;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner a.openPdf {
+        margin: 0 10px;
+        color: #000;
+        text-decoration: underline;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner .carousel-indicators {
+        display: none;
+    }
+    #Work .work_project_wrap .project_info .project_info_inner a.link_gitHub {
+        display: block;
+        width: 50%;
+        background: #59bfbf;
+        color: #fff;
+        text-align: center;
     }
 }
 
