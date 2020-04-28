@@ -582,17 +582,12 @@ h1, h2, h3, h4, h5, h6, p {
           #About .contentBox .contents_wrap .profile .profile_box_03 {
             max-width: 100%;
             overflow: hidden; }
-            #About .contentBox .contents_wrap .profile .profile_box_03 .profile_skill{
-              display: flex;
-              flex-wrap: wrap;
-            }
             #About .contentBox .contents_wrap .profile .profile_box_03 .title {
               font-size: 2.2vw;
               color: #be84ea;
               font-weight: bold;
               position: relative;
-              width:100%;
-              margin-bottom: 20px; }
+              margin-bottom: 20px;}
               #About .contentBox .contents_wrap .profile .profile_box_03 .title::after {
                 content: "";
                 position: absolute;
@@ -604,18 +599,36 @@ h1, h2, h3, h4, h5, h6, p {
                 left: 110px;
                 background: linear-gradient(to right, #b06ab3, #4568dc); }
             #About .contentBox .contents_wrap .profile .profile_box_03 .sub_txt {
-              margin: 10px 0;
-            padding:0 30px }
+              margin: 15px;
+              font-size: 22px;}
               #About .contentBox .contents_wrap .profile .profile_box_03 .skill_innerBox{
                 margin: 30px 15px;
-                width: 30%;
-                background: #efe4ff;
+                max-width: 100%;
               }
               #About .contentBox .contents_wrap .profile .profile_box_03 .skill_innerBox .skill_innerBox_ttl{
                 font-weight: bold;
-                margin-top: -15px;
                 text-align: center;
                 font-size: 24px;
+                color: #828282;
+              }
+              #About .contentBox .contents_wrap .profile .profile_box_03 .skill_innerBox .skill_innerBox_thumbsList{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 25px;
+                padding: 25px 0;
+                border-bottom: 1px solid #ddd;
+              }
+              #About .contentBox .contents_wrap .profile .profile_box_03 .skill_innerBox .skill_innerBox_thumbs{
+                overflow: hidden;
+                text-align: center;
+                padding: 0 20px;
+              }
+              #About .contentBox .contents_wrap .profile .profile_box_03 .skill_innerBox .skill_innerBox_thumbs img{
+                display: block;
+                width: 80px;
+                height: 80px;
+                margin: 0 auto;
               }
         #About .contentBox .contents_wrap .skills {
           margin-top: 1.3%;
