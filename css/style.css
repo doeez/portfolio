@@ -1745,6 +1745,34 @@ p {
         margin-top: 5%;
         padding: 3%;
     }
+    #Work .contentBox .work_contents .project_wrap {
+        margin-bottom: 60px;
+    }
+    #Work .contentBox .work_contents .work_title {
+        font-family: 'Cabin', sans-serif;
+        color: #9c7bff;
+        font-size: 32px;
+        transform: translate3d(200px, 0, 0);
+        -webkit-animation: fadeIn 0.8s ease;
+        -moz-animation: fadeIn 0.8s ease;
+        -ms-animation: fadeIn 0.8s ease;
+        animation: fadeIn 0.8s ease;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 0.6s;
+    }
+    #Work .project_info {
+        transform: translate3d(200px, 0, 0);
+        -webkit-animation: fadeIn 0.8s ease;
+        -moz-animation: fadeIn 0.8s ease;
+        -ms-animation: fadeIn 0.8s ease;
+        animation: fadeIn 0.8s ease;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 0.6s;
+    }
     #Work .contentBox .work_contents .work_contents_list {
         transform: translate3d(200px, 0, 0);
         -webkit-animation: fadeIn 0.8s ease;
@@ -1853,6 +1881,173 @@ p {
     #Work .contentBox .work_contents .work_contents_list li img {
         max-width: 100%;
         vertical-align: bottom;
+    }
+    /*
+        프로젝트 상세페이지
+    */
+    #Work .work_project_wrap {
+        max-width: 90%;
+        margin-left: auto;
+        padding: 8% 5%;
+        box-sizing: border-box;
+    }
+    #Work .project_info {
+        transform: translate3d(200px, 0, 0);
+        -webkit-animation: fadeIn 0.8s ease;
+        -moz-animation: fadeIn 0.8s ease;
+        -ms-animation: fadeIn 0.8s ease;
+        animation: fadeIn 0.8s ease;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 0.6s;
+    }
+    #Work .work_project_wrap .project_info .pr_title {
+        text-align: center;
+        font-size: 36px;
+        color: #59bfbf;
+        font-family: 'Cabin', sans-serif;
+        font-weight: bold;
+        margin-bottom: 55px;
+        position: relative;
+    }
+    #Work .work_project_wrap .project_info .pr_title:after {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        background: #59bfbf;
+        left: 0;
+        right: 0;
+        bottom: -25px;
+        margin: auto;
+    }
+    #Work .work_project_wrap .project_mainImg {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        border: 2px solid #59bfbf;
+    }
+    #Work .work_project_wrap .project_mainImg img {
+        max-width: 100%;
+        display: block;
+    }
+    #Work .work_project_wrap .siteLink_wrap {
+        width: 280px;
+        border: 2px solid #59bfbf;
+        margin: 15px auto;
+        padding: 10px 0;
+        transition: all .3s ease;
+    }
+    #Work .work_project_wrap .siteLink_wrap a {
+        color: #59bfbf;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        font-style: italic;
+        transition: all .3s ease;
+    }
+    #Work .work_project_wrap .siteLink_wrap:hover {
+        background: #59bfbf;
+    }
+    #Work .work_project_wrap .siteLink_wrap a:hover {
+        color: #fff;
+    }
+    #Work .work_project_wrap .project_info_inner {
+        width: 80%;
+        margin: 60px auto;
+    }
+    #Work .work_project_wrap .project_info_inner ul {
+        list-style: none;
+        padding: 0;
+    }
+    #Work .work_project_wrap .project_info_inner ul li {
+        margin: 30px 0;
+    }
+    #Work .work_project_wrap .project_info_inner ul li a.openPdf {
+        color: #000;
+        margin: 0 10px;
+        text-decoration: underline;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_title {
+        font-size: 28px;
+        font-weight: bold;
+        border-bottom: 1px solid #5d5a5a;
+        margin-bottom: 15px;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_txt {
+        letter-spacing: 0.08rem;
+        line-height: 28px;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_point {
+        margin: 15px;
+        line-height: 32px;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_point span {
+        font-size: 18px;
+        font-weight: bold;
+        color: #59bfbf;
+    }
+    #Work .work_project_wrap .project_info_inner ul li a.link_gitHub {
+        padding: 5px 10px;
+        display: block;
+        width: 180px;
+        border: 1px solid;
+        text-align: center;
+        color: #fff;
+        background: #59bfbf;
+    }
+    #Work #carouselExampleIndicators {
+        max-width: 75%!important;
+        margin-left: 5%;
+        margin-bottom: 80px;
+    }
+    #Work #carouselExampleIndicators .carousel-indicators {
+        bottom: -100px!important;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+    #Work #carouselExampleIndicators .carousel-indicators .controller-infoTxt {
+        text-indent: 0!important;
+        width: initial!important;
+        height: initial!important;
+        color: #59bfbf;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 5px 10px!important;
+        cursor: pointer!important;
+        background: initial;
+    }
+    #Work #carouselExampleIndicators .carousel-indicators .carousel-indicators-controller {
+        text-indent: 0!important;
+        width: 25%!important;
+        height: initial!important;
+        padding: 5px;
+        margin: 5px 10px!important;
+        background: initial!important;
+        font-size: 13px!important;
+        font-weight: bold!important;
+        color: #59bfbf!important;
+        cursor: pointer!important;
+        border: 1px solid #59bfbf!important;
+    }
+    #Work #carouselExampleIndicators .carousel-control-prev {
+        left: -5%!important;
+        color: #000!important;
+        width: 5%!important;
+        background: #000!important;
+    }
+    #Work #carouselExampleIndicators .carousel-control-next {
+        right: -5%!important;
+        color: #000!important;
+        width: 5%!important;
+        background: #000!important;
     }
     .work_background:before {
         content: '';
