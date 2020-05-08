@@ -1285,6 +1285,11 @@ p {
         font-weight: bold;
         color: #59bfbf;
     }
+    #Work .work_project_wrap .project_info_inner ul li .info_point span.info_add {
+        font-weight: bold;
+        color: #59bfbf;
+        font-size: initial;
+    }
     #Work .work_project_wrap .project_info_inner ul li a.link_gitHub {
         padding: 5px 10px;
         display: block;
@@ -1989,6 +1994,11 @@ p {
         font-weight: bold;
         color: #59bfbf;
     }
+    #Work .work_project_wrap .project_info_inner ul li .info_point span.info_add {
+        font-weight: bold;
+        color: #59bfbf;
+        font-size: initial;
+    }
     #Work .work_project_wrap .project_info_inner ul li a.link_gitHub {
         padding: 5px 10px;
         display: block;
@@ -2639,6 +2649,11 @@ p {
         color: #59bfbf;
         font-weight: bold;
         font-size: 16px;
+    }
+    #Work .work_project_wrap .project_info_inner ul li .info_point span.info_add {
+        font-weight: bold;
+        color: #59bfbf;
+        font-size: initial;
     }
     #Work .work_project_wrap .project_info .project_info_inner a.openPdf {
         margin: 0 10px;
